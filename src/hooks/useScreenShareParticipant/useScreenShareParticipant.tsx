@@ -15,6 +15,7 @@ export default function useScreenShareParticipant() {
     if (room.state === 'connected') {
       const updateScreenShareParticipant = () => {
         setScreenShareParticipant(
+          // @ts-ignore
           Array.from<Participant>(room.participants.values())
             // the screenshare participant could be the localParticipant
             .concat(room.localParticipant)

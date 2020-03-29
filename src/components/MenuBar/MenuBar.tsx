@@ -48,6 +48,7 @@ export default function MenuBar() {
   const roomState = useRoomState();
 
   const [name, setName] = useState<string>(user?.displayName || '');
+  const [password, setPassword] = useState<string>('');
   const [roomName, setRoomName] = useState<string>('');
 
   useEffect(() => {
@@ -64,13 +65,17 @@ export default function MenuBar() {
     setRoomName(event.target.value);
   };
 
+  const handlePasswordChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setPassword(event.target.value);
+  };
+
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     // If this app is deployed as a twilio function, don't change the URL beacuse routing isn't supported.
     if (!window.location.origin.includes('twil.io')) {
       window.history.replaceState(null, '', window.encodeURI(`/room/${roomName}`));
     }
-    getToken(name, roomName).then(token => connect(token));
+    getToken(name, roomName, password).then(token => connect(token));
   };
 
   return (
@@ -98,6 +103,14 @@ export default function MenuBar() {
               className={classes.textField}
               value={roomName}
               onChange={handleRoomNameChange}
+              margin="dense"
+            />
+            <TextField
+              id="menu-password"
+              label="Password"
+              className={classes.textField}
+              value={password}
+              onChange={handlePasswordChange}
               margin="dense"
             />
             <Button

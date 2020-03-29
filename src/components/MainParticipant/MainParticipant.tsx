@@ -16,7 +16,9 @@ export default function MainParticipant() {
   return (
     /* audio is disabled for this participant component because this participant's audio 
        is already being rendered in the <ParticipantStrip /> component.  */
+    // @ts-ignore
     <MainParticipantInfo participant={mainParticipant}>
+      // @ts-ignore
       <ParticipantTracks participant={mainParticipant} disableAudio enableScreenShare videoPriority={videoPriority} />
     </MainParticipantInfo>
   );

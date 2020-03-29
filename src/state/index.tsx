@@ -7,7 +7,7 @@ import { User } from 'firebase';
 export interface StateContextType {
   error: TwilioError | null;
   setError(error: TwilioError | null): void;
-  getToken(name: string, room: string, passcode?: string): Promise<string>;
+  getToken(name: string, room: string, password: string): Promise<string>;
   user?: User | null | { displayName: undefined; photoURL: undefined; passcode?: string };
   signIn?(passcode?: string): Promise<void>;
   signOut?(): Promise<void>;
@@ -49,20 +49,20 @@ export default function AppStateProvider(props: React.PropsWithChildren<{}>) {
   } else {
     contextValue = {
       ...contextValue,
-      getToken: async (identity, roomName) => {
+      getToken: async (identity, roomName, password) => {
         const headers = new window.Headers();
         const endpoint = process.env.REACT_APP_TOKEN_ENDPOINT || '/token';
-        const params = new window.URLSearchParams({ identity, roomName });
+        const params = new window.URLSearchParams({ identity, roomName, password });
 
         return fetch(`${endpoint}?${params}`, { headers }).then(res => res.text());
       },
     };
   }
 
-  const getToken: StateContextType['getToken'] = (name, room) => {
+  const getToken: StateContextType['getToken'] = (name, room, password) => {
     setIsFetching(true);
     return contextValue
-      .getToken(name, room)
+      .getToken(name, room, password)
       .then(res => {
         setIsFetching(false);
         return res;

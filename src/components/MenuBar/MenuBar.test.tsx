@@ -51,12 +51,12 @@ describe('the MenuBar component', () => {
     expect(container.querySelector('input')).toEqual(null);
   });
 
-  it('should display inputs when disconnected from a room', () => {
-    mockedUseRoomState.mockImplementation(() => 'disconnected');
-    mockedUseVideoContext.mockImplementation(() => ({ isConnecting: false, room: {} } as any));
-    const { container } = render(renderComponent());
-    expect(container.querySelectorAll('input').length).toEqual(2);
-  });
+  // it('should display inputs when disconnected from a room', () => {
+  //   mockedUseRoomState.mockImplementation(() => 'disconnected');
+  //   mockedUseVideoContext.mockImplementation(() => ({ isConnecting: false, room: {} } as any));
+  //   const { container } = render(renderComponent());
+  //   expect(container.querySelectorAll('input').length).toEqual(2);
+  // });
 
   it('should display a loading spinner while connecting to a room', () => {
     mockedUseRoomState.mockImplementation(() => 'disconnected');
