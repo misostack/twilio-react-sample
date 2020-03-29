@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/twilio-react-sample/static/js/main.913a1c42.chunk.js",
+    "main.js.map": "/twilio-react-sample/static/js/main.913a1c42.chunk.js.map",
+    "runtime-main.js": "/twilio-react-sample/static/js/runtime-main.4a75c88a.js",
+    "runtime-main.js.map": "/twilio-react-sample/static/js/runtime-main.4a75c88a.js.map",
+    "static/js/2.a99ff351.chunk.js": "/twilio-react-sample/static/js/2.a99ff351.chunk.js",
+    "static/js/2.a99ff351.chunk.js.map": "/twilio-react-sample/static/js/2.a99ff351.chunk.js.map",
+    "index.html": "/twilio-react-sample/index.html",
+    "precache-manifest.bd59f98cc34ac860f3cd77ab8cd71024.js": "/twilio-react-sample/precache-manifest.bd59f98cc34ac860f3cd77ab8cd71024.js",
+    "service-worker.js": "/twilio-react-sample/service-worker.js",
+    "static/js/2.a99ff351.chunk.js.LICENSE.txt": "/twilio-react-sample/static/js/2.a99ff351.chunk.js.LICENSE.txt",
+    "static/media/google-logo.06c50bce.svg": "/twilio-react-sample/static/media/google-logo.06c50bce.svg",
+    "static/media/twilio-logo.62d2e629.svg": "/twilio-react-sample/static/media/twilio-logo.62d2e629.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4a75c88a.js",
+    "static/js/2.a99ff351.chunk.js",
+    "static/js/main.913a1c42.chunk.js"
+  ]
+}
