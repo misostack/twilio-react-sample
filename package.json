@@ -60,7 +60,7 @@
     ]
   },
   "scripts": {
-    "start": "concurrently npm:server npm:dev",
+    "start": "node server.js",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
