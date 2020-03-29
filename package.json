@@ -60,13 +60,13 @@
     ]
   },
   "scripts": {
-    "start": "concurrently npm:server npm:dev",
+    "start": "concurrently npm:build npm:server",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{ts,tsx}",
-    "server": "node server.js",
+    "server": "node server/server.js",
     "test:ci": "jest --ci --runInBand --reporters=default --reporters=jest-junit --coverage",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --browser chrome",
