@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0bfc006400d25c41001f6c40a3c7a81e",
+    "revision": "0ec402852dce0cb54f048af6cb90dd00",
     "url": "https://misostack.github.io/twilio-react-sample/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://misostack.github.io/twilio-react-sample/static/js/2.b81d83f1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2035ed3089a7ff10cf4d",
-    "url": "https://misostack.github.io/twilio-react-sample/static/js/main.2eb092ba.chunk.js"
+    "revision": "821724844cb40a7493be",
+    "url": "https://misostack.github.io/twilio-react-sample/static/js/main.6fe25a50.chunk.js"
   },
   {
     "revision": "c7069e299caddbfc06fb",
