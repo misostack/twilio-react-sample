@@ -61,7 +61,7 @@ ReactDOM.render(
           <Route path={process.env.PUBLIC_URL + '/login'}>
             <LoginPage />
           </Route>
-          <Redirect to="/" />
+          <Redirect to={process.env.PUBLIC_URL} />
         </Switch>
       </AppStateProvider>
     </Router>
