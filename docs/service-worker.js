@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/twilio-react-sample/precache-manifest.053c9ccd3fdf6f96ae5f49ef34403e7e.js"
+  "/twilio-react-sample/precache-manifest.49e4faa10e70a71d9967edc63a21f2c2.js"
 );
 
 self.addEventListener('message', (event) => {
