@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://misostack.github.io/twilio-react-sample/precache-manifest.b346b060b7ea630763deceb64c703769.js"
+  "https://misostack.github.io/twilio-react-sample/precache-manifest.4450e9fb4e8f3aba5bee98ac821758e3.js"
 );
 
 self.addEventListener('message', (event) => {
