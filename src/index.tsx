@@ -37,7 +37,7 @@ const connectionOptions: ConnectOptions = {
 
 const VideoApp = () => {
   const { error, setError } = useAppState();
-
+  console.log('process.env.PUBLIC_URL:', process.env.PUBLIC_URL);
   return (
     <VideoProvider options={connectionOptions} onError={setError}>
       <ErrorDialog dismissError={() => setError(null)} error={error} />
